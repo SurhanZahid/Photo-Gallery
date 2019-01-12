@@ -1,6 +1,6 @@
 # Photo Gallery
 
-This website was inspired by the [pixabay] and [unsplash] were people can share their picture which any user can use for their projects (open source), they can also like and share it with their friends. The website is really simple no frontend framework has been used. Maybe in the future, I will implement it.T his website is from users who are beginners and want to know how to apply  CRUD operations and how to upload an image to a database and how to display it in a card view.
+This website was inspired by the [pixabay] and [unsplash] were people can share their picture which any user can use for their projects (open source), they can also like and share it with their friends. The website is really simple no frontend framework has been used. Maybe in the future, I will implement it in a Vue.js framework.This website is from users who are beginners and want to know how to apply  CRUD operations and how to upload an image to a database and how to display it in a card view.
 
 # Features
 
