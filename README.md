@@ -1,6 +1,6 @@
 # Photo Gallery
 
-This website was inspired by the [pixabay] and [unsplash] were people can share their picture which any user can use for their projects (open source), they can also like and share it with their friends. The website is really simple no frontend framework has been used. Maybe in the future, I will implement it.T his website is from users who are beginners and want to know how to apply  CRUD operations and how to upload an image to a database and how to display it in a card view.
+This website was inspired by the [pixabay] and [unsplash] were people can share their picture which any user can use for their projects (open source), they can also like and share it with their friends. The website is really simple no frontend framework has been used. Maybe in the future, I will implement it in a Vue.js framework.This website is from users who are beginners and want to know how to apply  CRUD operations and how to upload an image to a database and how to display it in a card view.
 
 # Features
 
@@ -33,6 +33,18 @@ $ composer update
 $ php artisan serve
 ```
 Once the server is running got to your .env file and change the database name and password to your database name and password.
+
+### Screen Shots
+
+#### Main Page
+<p align="center">
+  <img width="100%" height="300" src="https://user-images.githubusercontent.com/32094006/51079018-76514100-16e1-11e9-8b36-4e4cdbb6e6c9.PNG">
+</p>
+
+#### Dashboard
+<p align="center">
+  <img width="100%" height="300" src="https://user-images.githubusercontent.com/32094006/51079048-48b8c780-16e2-11e9-9bf2-387301410acf.PNG">
+</p>
 
 ### Todos
 
