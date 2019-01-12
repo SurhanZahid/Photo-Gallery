@@ -34,6 +34,18 @@ $ php artisan serve
 ```
 Once the server is running got to your .env file and change the database name and password to your database name and password.
 
+### Screen Shots
+
+#### Main Page
+<p align="center">
+  <img width="100%" height="300" src="https://user-images.githubusercontent.com/32094006/51079018-76514100-16e1-11e9-8b36-4e4cdbb6e6c9.PNG">
+</p>
+
+#### Dashboard
+<p align="center">
+  <img width="100%" height="300" src="https://user-images.githubusercontent.com/32094006/51079048-48b8c780-16e2-11e9-9bf2-387301410acf.PNG">
+</p>
+
 ### Todos
 
  - Make the UI alot more intresting 
