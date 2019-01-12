@@ -29,7 +29,8 @@ class LikeController extends Controller
         ->where('post_id', $id)
         ->count();
 
-        if ($check ==1) {
+        if ($check ==1) 
+        {
         $like = DB::table('post')
         ->where('id','=',$id)
         ->sum('likes_count');
@@ -47,7 +48,8 @@ class LikeController extends Controller
 
         return redirect()->back()->with('message', 'You UnLiked This Post');
         } 
-        elseif($check ==0) {
+        elseif($check ==0)
+         {
          $like = DB::table('post')
         ->where('id','=',$id)
         ->sum('likes_count');

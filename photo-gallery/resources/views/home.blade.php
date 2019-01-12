@@ -1,22 +1,25 @@
 @extends('layouts.app')
 
 @section('content')
-@if(session()->has('message'))
-    <div class="alert alert-success">
-            <button type="button" aria-hidden="true" class="close" onclick="this.parentElement.style.display='none'">×</button>
-        {{ session()->get('message') }}
-    </div>
-@endif
 
-@if(session()->has('alert'))
-    <div class="alert alert-danger">
-            <button type="button" aria-hidden="true" class="close" onclick="this.parentElement.style.display='none'">×</button>
-        {{ session()->get('alert') }}
-    </div>
-@endif
 
 <div class="index-content container">
         <h1 style="margin-top:100px;" class="text-center">Posts</h1>
+        {{-- Messages --}}
+        @if(session()->has('message'))
+    <div class="alert alert-success alert-dismissible">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <strong>{{ session()->get('message') }}</strong>
+      </div>
+    @endif
+
+    @if(session()->has('alert'))
+    <div class="alert alert-success alert-dismissible">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <strong>{{ session()->get('alert') }}</strong>
+      </div>
+    @endif
+    {{-- End Message --}}
     <div class="row">
      {{-- Card --}}
     <div id="products" class="row view-group">

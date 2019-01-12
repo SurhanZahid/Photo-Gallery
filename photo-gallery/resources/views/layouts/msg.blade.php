@@ -8,7 +8,7 @@
     @endforeach
 @endif
 
-@if(session('successMsg'))
+@if(session('message'))
     <div class="alert alert-success">
         <button type="button" aria-hidden="true" class="close" onclick="this.parentElement.style.display='none'">×</button>
         <span>
