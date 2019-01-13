@@ -31,8 +31,8 @@ class FormController extends Controller
     {
         $this->validate($request,[
             'path' => 'required|mimes:jpeg,jpg,bmp,png',
-            'categories' => 'required',
-            'title' => 'required',
+            'categories' => 'required|max:10',
+            'title' => 'required|max:10',
         ]);
 
         $image = $request->file('path');
@@ -75,8 +75,8 @@ class FormController extends Controller
     {
         $this->validate($request,[
             'path' => 'required|mimes:jpeg,jpg,bmp,png',
-            'categories' => 'required',
-            'title' => 'required',
+            'categories' => 'required|max:10',
+            'title' => 'required|max:10',
         ]);
 
         $image = $request->file('path');
@@ -94,7 +94,7 @@ class FormController extends Controller
         DB::table('post')
             ->where('id', $request->post_id)
             ->update(['title' => $request->title,'categories' => $request->categories,'path' => $imagename]);
-            return redirect()->back();
+            return redirect()->back()->with('message', 'Post Deleted');
          }else{
             $imagename = "default.png";
          }
@@ -103,5 +103,6 @@ class FormController extends Controller
     public function delete($id)
     {
         DB::table('post')->where('id', '=', $id)->delete();
+        return redirect()->back()->with('alert', 'Post Deleted');
     }
 }

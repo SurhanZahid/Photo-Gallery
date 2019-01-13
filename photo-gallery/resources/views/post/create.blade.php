@@ -23,13 +23,28 @@
                         <div class="row register-form">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" name="title" placeholder="Title" value="" />
+                                    <input type="text" class="form-control{{ $errors->has('title') ? ' is-invalid' : '' }}" name="title" placeholder="Title" value="" />
+                                    @if ($errors->has('title'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('title') }}</strong>
+                                    </span>
+                                @endif
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" name="categories" placeholder="Categories" value="" />
+                                    <input type="text" class="form-control{{ $errors->has('categories') ? ' is-invalid' : '' }}" name="categories" placeholder="Categories" value="" />
+                                    @if ($errors->has('categories'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('categories') }}</strong>
+                                    </span>
+                                @endif
                                 </div>
                                 <div class="form-group">
-                                    <input name="path" type="file">
+                                    <input class="form-control{{ $errors->has('path') ? ' is-invalid' : '' }}" name="path" type="file">
+                                    @if ($errors->has('path'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('path') }}</strong>
+                                    </span>
+                                @endif
                                 </div>
                                 <button type="submit" class="btn btn-primary">Submit</button>
                             </div>    
