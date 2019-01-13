@@ -34,7 +34,7 @@ Download the project from the repo and then run these commands.
 $ composer update 
 $ php artisan serve
 ```
-Once the server is running got to your .env file and change the database name and password to your database name and password.
+Once the server is running got to your .env file and change the database name and password to your database name and password.Database has also been added in the Database folder.
 
 ### Screen Shots
 
